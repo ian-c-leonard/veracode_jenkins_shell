@@ -75,12 +75,7 @@ and create 4 *string parameters* with the following formats:
         if [ -z "$app_ID" ];
         then
              echo '[INFO] App does not exist'
-             echo '[INFO] create app: ' $APP_NAME
-             creat_addp=$(java -jar $JAVA_WRAPPER_LOCATION/VeracodeJavaAPI.jar -vid $API_ID -vkey $API_KEY -action createApp -appname "$APP_NAME" -criticality high)
-             echo '[INFO]app created'
-             app_ID=$(java -jar $JAVA_WRAPPER_LOCATION/VeracodeJavaAPI.jar -vid $API_ID -vkey $API_KEY -action GetAppList | grep -w "$APP_NAME" | sed -n 's/.* app_id=\"\([0-9]*\)\" .*/\1/p')
-             echo '[INFO] new App-ID: ' $app_ID
-             echo ""
+	     exit 1
         else
              echo '[INFO] App-IP: ' $app_ID
              echo ""
