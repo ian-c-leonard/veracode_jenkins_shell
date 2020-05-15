@@ -56,7 +56,7 @@ and create 4 *string parameters* with the following formats:
         JAVA_WRAPPER_LOCATION="."
         OUTPUT_FILE_LOCATION="$WORKSPACE"
         OUTPUT_FILE_NAME=$APP_NAME'-'$VERSION'.txt'
-        echo '[INFO] ------------------------------------------------------------------------'
+        echo '[INFO] -----------------------------------------------------------------------'
         echo '[INFO] DOWNLOADING VERACODE JAVA WRAPPER'
         if `wget https://repo1.maven.org/maven2/com/veracode/vosp/api/wrappers/vosp-api-wrappers-java/17.11.4.9/vosp-api-wrappers-java-17.11.4.9.jar -O VeracodeJavaAPI.jar`; then
                 chmod 755 VeracodeJavaAPI.jar
