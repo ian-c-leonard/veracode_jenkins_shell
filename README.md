@@ -128,9 +128,6 @@ and create 4 *string parameters* with the following formats:
 
         upload_scan_results=$(cat $OUTPUT_FILE_LOCATION$OUTPUT_FILE_NAME)
 
-        echo "*************************** upload_scan_results"
-        echo $upload_scan_results
-
         if [ $upload_scan_results == *"already exists"* ];
         then
              echo ""
