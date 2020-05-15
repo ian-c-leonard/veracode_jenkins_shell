@@ -75,7 +75,7 @@ and create 4 *string parameters* with the following formats:
         if [ -z "$app_ID" ];
         then
              echo '[INFO] App does not exist'
-	     exit 1
+             exit 1
         else
              echo '[INFO] App-IP: ' $app_ID
              echo ""
