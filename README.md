@@ -33,9 +33,11 @@ and create 4 *string parameters* with the following formats:
 
 # Configure Build
 1. Add a build step "Execute Shell" and place the following command inside:
-	`zip -r upload.zip $WORKSPACE -x *node_modules/*`
+	~~~
+	zip -r upload.zip $WORKSPACE -x *node_modules/*
+	~~~
 
-2. Add another build step "Execute Shell" and copy/paste the below shell script:
+3. Add another build step "Execute Shell" and copy/paste the below shell script:
 	~~~
 	#/bin/bash
 
